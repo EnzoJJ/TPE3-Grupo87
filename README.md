@@ -24,13 +24,21 @@ El diagrama entidad relación (DER) del modelo de datos planteado:
         "id_usuario": 1
     }
 
+
+  Listar todas las peliculas:
+  
   -GET:/api/pelicula
   Este endpoint devuelve la lista completa de peliculas de la base de datos.
 
+  Listar pelicula por id: 
+  
   -GET:/api/pelicula/:id
   Este endpoint devuelve la pelicula con el id indicado.
 
+  Agregar Pelicula:
+  
   -POST:/api/pelicula
+  
   Este endpoint recibe un JSON en el body del HTTP Request en este formato:
   POST: {
     "titulo": "Nuevoo título",
@@ -40,6 +48,8 @@ El diagrama entidad relación (DER) del modelo de datos planteado:
     "id_usuario":2
   }
 
+  Editar Pelicula:
+  
   -PUT:/api/pelicula/:id 
   Este endpoint recibe un JSON parecido al anterior, y modifica el elemento con ese id.
   PUT: {
@@ -50,15 +60,22 @@ El diagrama entidad relación (DER) del modelo de datos planteado:
   }
 
   Parametros de ordenamiento:
-  Al solicitar la lista de peliculas(GET:/pelicula) podemos usar los siguientes
+  
+  Al solicitar la lista de peliculas(GET:/pelicula) 
+  
   Ordenar de forma ascendente:
+  
   -GET:api/pelicula?sort=CampoDeseado&order=ASC 
+  
   Ordenar de forma descendente:
+  
   -GET:api/pelicula?sort=CampoDeseado&order=DESC
 
   Paginar:
+  
   GET:/api/pelicula?page=1&pageSize=2 (esto es si quieres probar otros tamaños o ver otra "pagina" pero ya el codigo tiene un limite de
   10 peliculas por pagina).
 
   Este es un ejemplo para ordenar las peliculas y a la vez elegir el tamaño y la pagina
+  
   GET:/api/pelicula?sort=Titulo&order=ASC&page=1&pageSize=10
