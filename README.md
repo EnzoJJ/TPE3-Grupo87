@@ -71,6 +71,10 @@ El diagrama entidad relación (DER) del modelo de datos planteado:
   
   -GET:api/pelicula?sort=CampoDeseado&order=DESC
 
+  Ejemplo ordenar por fecha:
+
+  -GET:api/pelicula?sort=FechaDeLanzamiento&order=DESC
+
   Paginar:
   
   GET:/api/pelicula?page=1&pageSize=2 (esto es si quieres probar otros tamaños o ver otra "pagina" pero ya el codigo tiene un limite de
