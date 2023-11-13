@@ -1,0 +1,13 @@
+orden ascendente:
+http://localhost/TPE-Entrega3/api/pelicula?ASC
+
+orden descendente: 
+http://localhost/TPE-Entrega3/api/pelicula?orderBy=fechaDeLanzamiento&orderDirection=DESC
+
+GET coleccion de peliculas: 
+http://localhost/TPE-Entrega3/api/pelicula
+
+GET por ID:
+http://localhost/TPE-Entrega3/api/pelicula/7(id)
+
+POST/PUT: http://localhost/TPE-Entrega3/api/pelicula
