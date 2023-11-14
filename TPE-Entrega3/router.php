@@ -7,7 +7,7 @@
     $router = new Router();
 
     #                 endpoint      verbo     controller           método
-    $router->addRoute('pelicula',     'GET',    'PeliculaController', 'get'   ); # TaskApiController->get($params)
+    $router->addRoute('pelicula',     'GET',    'PeliculaController', 'get'   ); # PeliculaController->get($params)
     $router->addRoute('pelicula',     'POST',   'PeliculaController', 'create');
     $router->addRoute('pelicula/:ID', 'GET',    'PeliculaController', 'get'   );
     $router->addRoute('pelicula/:ID', 'PUT',    'PeliculaController', 'update');
